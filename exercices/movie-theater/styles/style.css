@@ -1,0 +1,27 @@
+
+/* Apply the css rules to both selectores*/
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Apply the css rules to all a children of h2 (Don't need to be direct child */
+h2 a {
+  color: seagreen;
+}
+
+p {
+  font-size: 20px;
+}
+
+.today {
+  color: darkred;
+}
+
+.tomorrow {
+  color: darkblue;
+}
