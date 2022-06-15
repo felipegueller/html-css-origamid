@@ -1,0 +1,53 @@
+:root {
+  --white: #fff;
+  --text-color: #b2b2b2;
+  --light-yellow: #febe01;
+  --link-color: #332200;
+  --black: #111;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 10px;
+}
+
+h1 {
+  margin: 50px 0 30px 0;
+  text-align: center;
+}
+
+.box {
+  margin: 0 auto 30px auto;
+  width: 80%;
+  padding: 30px;
+  background-color: var(--black);
+  border-radius: 4px;
+}
+
+.box h2 {
+  margin-bottom: 10px;
+  color: var(--white);
+}
+
+.box p {
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.box a {
+  padding: 10px;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--link-color);
+  background-color: var(--light-yellow);
+  border-radius: 4px;
+}
+
+.box .text-color {
+  color: var(--light-yellow);
+}
