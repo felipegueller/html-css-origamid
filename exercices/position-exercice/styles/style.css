@@ -4,6 +4,7 @@
   --light-yellow: #febe01;
   --link-color: #332200;
   --black: #111;
+  --mg-bottom: 10px;
 }
 
 * {
@@ -30,12 +31,12 @@ h1 {
 }
 
 .box h2 {
-  margin-bottom: 10px;
+  margin-bottom: var(--mg-bottom);
   color: var(--white);
 }
 
 .box p {
-  margin-bottom: 10px;
+  margin-bottom: var(--mg-bottom);
   color: var(--text-color);
 }
 
@@ -46,7 +47,15 @@ h1 {
   color: var(--link-color);
   background-color: var(--light-yellow);
   border-radius: 4px;
+  transition: background 100ms ease-in;
 }
+
+.box a:hover {
+  padding: 9px;
+  border: 1px solid #fff;
+  color: var(--white);
+  background-color: var(--black);
+} 
 
 .box .text-color {
   color: var(--light-yellow);
