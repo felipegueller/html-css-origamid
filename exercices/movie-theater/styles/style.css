@@ -13,24 +13,36 @@ body {
   gap: 5px;
 }
 
+.breadcrumb ol li {
+  color: #666;
+}
+
 .breadcrumb ol li:not(:last-child)::after {
-  content: '>';
+  content: '\f531';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: #F34d;
   padding: 0 5px;
 }
 
 .breadcrumb ol li a {
-  color: #666;
+  color: inherit;
 }
 
 .breadcrumb ol li a:hover {
   color: #FF3344;
 }
 
-.breadcrumb ol li a::before {
+/* .breadcrumb ol li a::before {
   content: '\f015';
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   padding-right: 5px;
+} */
+
+.breadcrumb ol li a > i {
+  display: inline-block;
+  padding-right: 2.5px;
 }
 
 a {
