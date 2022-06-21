@@ -5,6 +5,34 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.breadcrumb ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 5px;
+}
+
+.breadcrumb ol li:not(:last-child)::after {
+  content: '>';
+  padding: 0 5px;
+}
+
+.breadcrumb ol li a {
+  color: #666;
+}
+
+.breadcrumb ol li a:hover {
+  color: #FF3344;
+}
+
+.breadcrumb ol li a::before {
+  content: '\f015';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  padding-right: 5px;
+}
+
 a {
   text-decoration: none;
 }
