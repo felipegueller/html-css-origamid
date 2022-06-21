@@ -1,0 +1,19 @@
+h1 {
+  text-align: center;
+  font-size: 3em;
+}
+.some-image img {
+  /* grows up to the image's max-size */
+  max-width: 100%;
+  display: block;
+}
+
+.resolution img {
+  /* Grows up to the parent's width */
+  width: 100%;
+}
+
+.resolution .small-image {
+  /* This ensures that image does not lose resolution and don't become borred*/
+  width: 150px;
+}
