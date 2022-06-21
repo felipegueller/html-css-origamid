@@ -6,7 +6,8 @@ h1 {
 div {
   margin-bottom: 30px;
 }
-.some-image img {
+
+.some-images img {
   /* grows up to the image's max-size */
   max-width: 100%;
   display: block;
