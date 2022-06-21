@@ -2,6 +2,10 @@ h1 {
   text-align: center;
   font-size: 3em;
 }
+
+div {
+  margin-bottom: 30px;
+}
 .some-image img {
   /* grows up to the image's max-size */
   max-width: 100%;
@@ -16,4 +20,10 @@ h1 {
 .resolution .small-image {
   /* This ensures that image does not lose resolution and don't become borred*/
   width: 150px;
+}
+
+.image-types img {
+  max-width: 100%;
+  width: 600px;
+  display: block;
 }
