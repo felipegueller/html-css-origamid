@@ -1,0 +1,15 @@
+span {
+  display: inline-block;
+  background-color: #ddd;
+}
+
+span {
+  padding: 20px;
+  padding: 20px 30px;
+  padding: 20px 30px 20px 30px;
+  margin: 20px 10px;
+  border: 10px solid #000;
+  border-width: 10px;
+  border-width: 10px 20px;
+  border-width: 10px 20px 15px 30px;
+}
