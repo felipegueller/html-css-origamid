@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 40px;
+}
+
+h1, p {
+  margin: 0;
+}
+
+.btn {
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid .title {
+  font-size: 48px;
+  line-height: 1;
+  grid-column: 1 / -1;
+}
+
+.grid .photo {
+  max-width: 100%;
+  display: block;
+}
+
+.grid .info {
+  display: grid;
+  place-items: start;
+  place-self: start;
+  gap: 20px;
+}
+
+.grid .description {
+  text-align: justify;
+}
+
+.grid .price {
+  padding: 5px 10px;
+  background-color: #ddd;
+  border-radius: 4px;
+}
+.grid .description,
+.grid .price {
+  font-size: 20px;
+}
+
+.grid .buy {
+  background-color: #a8f;
+  color: #103;
+}
