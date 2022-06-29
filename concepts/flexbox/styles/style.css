@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 20px;
+  list-style: none;
+  min-height: 50vh;
+}
+
+li {
+  padding: 20px;
+  font-size: 20px;
+  color: #111;
+  font-weight: bold;
+  background: #e7e7e7;
+  border: 1px solid #d7d7d7;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center;
+  gap: 15px;
+}
+
+.flex li {
+  flex: 1; 
+  /* Shotcut para as 3 propriedades*/
+  /* flex-grow: 1; - crescer
+  flex-shrink: 1; - reduzir 
+  flex-basis: 0; - base para criar os elementos 
+  */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+  align-items: start;
+  grid-gap: 20px;
+}
