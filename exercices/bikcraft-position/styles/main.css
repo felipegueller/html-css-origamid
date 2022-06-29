@@ -148,7 +148,7 @@ body {
   grid-column: 1;
 }
 
-.grid-container .content > .benefits > .benefit > h2,
+.grid-container .content > .benefits > .benefit > h3,
 .grid-container .content > .benefits > .benefit > p {
   grid-column: 2;
   font-size: var(--p-font-size);
