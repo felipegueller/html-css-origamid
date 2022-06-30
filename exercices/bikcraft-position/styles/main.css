@@ -138,7 +138,7 @@ a {
 /* benefits*/
 
 .grid-container .content > .benefits {
-  padding: 60px;
+  padding: 40px;
   background-color: var(--white);
   display: grid;
   grid-template-columns: 1fr;
@@ -148,7 +148,7 @@ a {
 .grid-container .content > .benefits > .benefit {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 10px;
+  gap: 10px 20px;
 }
 
 .grid-container .content > .benefits > .benefit > img {
