@@ -15,7 +15,7 @@
   --white: #fff;
   --black: #111;
 
-  --p-font-size: 20px;
+  --p-font-size: 1.25rem;
 }
 
 body {
@@ -57,10 +57,15 @@ a {
 
 .grid-container .logo {
   grid-column: 1 / -1;
-  align-self: center;
 }
 
 /* Menu */
+.header {
+  width: 100%;
+  display: grid;
+  gap: 70px;
+  justify-items: center;
+}
 
 .grid-container .menu {
   grid-column: 1 / -1;
@@ -71,6 +76,7 @@ a {
 }
 
 .grid-container .menu a {
+  display: inline-block;
   background-color: var(--white);
 }
 
@@ -89,7 +95,7 @@ a {
 
 /* See more */
 
-.grid-container .content > .see-more {
+.introduction {
   padding: 40px ;
   position: relative;
 
@@ -102,7 +108,7 @@ a {
   background-color: var(--white);
 }
 
-.grid-container .content > .see-more::after {
+.introduction::after {
   content: '';
   height: 4px;
   width: 70px;
@@ -114,54 +120,62 @@ a {
   z-index: 1;
 }
 
-.grid-container .content > .see-more p {
+.introduction p {
   text-align: right;
 }
 
-.grid-container .content > .see-more a {
+.introduction a {
   color: var(--white);
   background-color: var(--red);
 }
 
-.grid-container .content > .see-more a:hover {
+.introduction a:hover {
   background-color: var(--dark-red);
 }
 
-.grid-container .content > .benefits-title {
-  padding: 15px 40px;
+.subtitle {
+  padding: 40px;
   place-self: center;
   text-align: right;
-  font-size: 64px;
+  text-transform: uppercase;
+  font-size: 4rem;
   color: var(--h1-custom-color);
+  background-image: url("../img/onda.svg");
 }
 
 /* benefits*/
 
-.grid-container .content > .benefits {
+.benefits {
   padding: 40px;
   background-color: var(--white);
   display: grid;
   grid-template-columns: 1fr;
-  gap: 40px;
 }
 
-.grid-container .content > .benefits > .benefit {
+.benefits-item {
+  padding: 20px;
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 10px 20px;
+  border-radius: 4px;
+  border-left: 5px solid transparent;
+  transition: 200ms ease-in-out;
 }
 
-.grid-container .content > .benefits > .benefit > img {
-  grid-column: 1;
+.benefits-item:hover {
+  border-left-color: var(--red);
 }
 
-.grid-container .content > .benefits > .benefit > h3,
-.grid-container .content > .benefits > .benefit > p {
+.benefits-item:nth-child(odd) {
+  background-color: var(--bg-color);
+}
+
+.benefits-item > p {
   grid-column: 2;
 }
 
 /* Footer */
-.grid-container .footer {
+.footer {
   justify-self: stretch;
   padding: 40px 0;
   background-color: var(--white);
