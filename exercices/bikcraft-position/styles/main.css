@@ -76,7 +76,7 @@ a {
 }
 
 .grid-container .menu a {
-  display: inline-block;
+  display: block;
   background-color: var(--white);
 }
 
@@ -105,6 +105,7 @@ a {
   justify-items: end;
   gap: 20px;
 
+  text-align: right;
   background-color: var(--white);
 }
 
@@ -120,10 +121,6 @@ a {
   z-index: 1;
 }
 
-.introduction p {
-  text-align: right;
-}
-
 .introduction a {
   color: var(--white);
   background-color: var(--red);
@@ -131,6 +128,11 @@ a {
 
 .introduction a:hover {
   background-color: var(--dark-red);
+}
+
+.content-cover {
+  height: 100%;
+  object-fit: cover;
 }
 
 .subtitle {
@@ -181,4 +183,59 @@ a {
   background-color: var(--white);
   display: flex;
   justify-content: center;
+}
+
+/* Responsivo */
+@media screen and (max-width: 1000px) {
+  .grid-container .content {
+    grid-template-columns: 1fr;
+    padding: 0 1.25rem;
+  }
+
+  .introduction::after {
+    display: none;
+  }
+
+  .subtitle {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grid-container {
+    padding-top: 1.875rem;
+  }
+
+  .header {
+    padding: 0 1.25rem;
+  }
+
+  .grid-container,
+  .header {
+    gap: 1.875rem;
+  }
+
+  .header nav {
+    width: 100%;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .introduction {
+    text-align: left;
+    justify-items: start;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .subtitle {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
 }
