@@ -1,0 +1,20 @@
+html {
+  font-size: 32px;
+}
+
+body {
+  /* O dobro do valor contido no size do html */
+  font-size: 200%; /* 64px*/
+}
+
+.px {
+  font-size: 16px;
+}
+
+.rem {
+  font-size: 1rem;
+}
+
+.em {
+  font-size: 1em;
+}
