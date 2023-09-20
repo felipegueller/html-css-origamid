@@ -1,0 +1,29 @@
+.bicicleta {
+  height: 400px;
+  background-color: tomato;
+  background-image: url("./img/bicicleta.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+
+h1 {
+  margin: auto;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+}
+
+.pattern {
+  height: 200px;
+  background-color: lightcoral;
+  background-image: url("./img/pattern.svg");
+  background-repeat: repeat;
+  background-size: 30px;
+}
+
+.linear-gradiente {
+  height: 200px;
+  background-image: linear-gradient(120deg, red 10%, blue 40%, yellow 75%);
+}
