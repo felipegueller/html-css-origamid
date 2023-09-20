@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.red {
+  background-color: red;
+}
+
+.white {
+  background-color: white;
+  position: relative;
+}
+
+.green {
+  background-color: green;
+}
+
+.green, .white, .red {
+  height: calc(100vh / 3);
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  text-transform: uppercase;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 5px #00000066;
+}
