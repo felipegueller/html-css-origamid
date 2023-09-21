@@ -4,12 +4,7 @@
   gap: 100px;
 }
 
-.subtitle {
-  font-size: 8rem;
-  line-height: 1;
-  text-transform: uppercase;
-  max-width: 4ch;
-  word-break: break-all;
+.experiency .subtitle {
   color: var(--c3);
 }
 
@@ -89,9 +84,7 @@
     gap: 1.25rem;
   }
 
-  .subtitle {
-    font-size: 2rem;
-    max-width: max-content;
+  .experiency  .subtitle {
     color: var(--c13);
   }
 

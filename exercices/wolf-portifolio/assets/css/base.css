@@ -43,3 +43,19 @@ img {
   margin: 0 auto;
   max-width: 1200px;
 }
+
+.subtitle {
+  font-size: 8rem;
+  line-height: 1;
+  text-transform: uppercase;
+  max-width: 4ch;
+  word-break: break-all;
+}
+
+@media screen and (max-width: 800px) {
+  .subtitle {
+    font-size: 2rem;
+    text-transform: capitalize;
+    max-width: initial;
+  }
+}
