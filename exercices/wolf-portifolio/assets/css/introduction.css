@@ -1,0 +1,83 @@
+.introduction {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 6.25rem;
+  align-items: center;
+}
+
+.introduction-text h1 {
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 1.25rem;
+  position: relative;
+}
+
+.introduction-text h1::before {
+  content: "";
+  display: block;
+  width: 8.75rem;
+  height: 7.5rem;
+  background-image: url("../img/detalhe.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+}
+
+.introduction-text p {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .introduction-text h1 {
+    font-size: 3rem;
+  }
+
+  .introduction-text h1::before
+  {
+    width: 110px;
+    height: 80px;
+    top: 25px;
+    left: 25px;
+    background-size: contain;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .introduction {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .introduction-text h1 {
+    font-size: 2rem;
+  }
+
+  .introduction-text h1::before
+  {
+    width: 30px;
+    height: 10px;
+    background-size: auto;
+    position: initial;
+    transform: translate(0, 0);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .introduction {
+    grid-template-columns: 1fr;
+  }
+
+  .introduction img {
+    display: none;
+  }
+
+  .introduction p {
+    font-size: 1.25rem;
+  }
+}
