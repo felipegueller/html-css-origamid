@@ -23,6 +23,7 @@
 body {
   font-family: 'Fira Sans', Arial, sans-serif;
   color: var(--c13);
+  margin-bottom: 1000px;
 }
 
 ul {
@@ -48,14 +49,13 @@ img {
   font-size: 8rem;
   line-height: 1;
   text-transform: uppercase;
-  max-width: 4ch;
   word-break: break-all;
 }
 
 @media screen and (max-width: 800px) {
   .subtitle {
-    font-size: 2rem;
+    font-size: 3rem;
     text-transform: capitalize;
-    max-width: initial;
+    max-width: initial !important;
   }
 }
