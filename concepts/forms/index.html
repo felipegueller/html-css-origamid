@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aprenda mais sobre estilização de formulários HTML!"
+    />
+    <title>HTML - Estilização de formulários</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="./index.html">
+      <label for="name">Nome</label>
+      <input type="text" id="name" name="name" placeholder="type.." />
+
+      <div class="checkbox">
+        <input type="checkbox" name="conditions" id="conditions" />
+        <label for="conditions">
+          Aceito os termos de condição descritos no item 7.4, requeridos por
+          esse site.
+        </label>
+      </div>
+
+      <p>Qual dos dois clubles abaixos é um time?</p>
+
+      <div class="radio">
+        <input type="radio" name="ask1" id="vasco_da_gama" value="Vasco da Gama">
+        <label for="vasco_da_gama">Vasco da Gama</label>
+      </div>
+
+      <div class="radio">
+        <input type="radio" name="ask1" id="flamengo" value="Flamengo">
+        <label for="flamengo">Flamengo</label>
+      </div>
+
+      <label for="shopping">Parcelas</label>
+      <select name="shopping" id="shopping">
+        <option value="1x">1x de R$ 200,00</option>
+        <option value="2x">2x de R$ 100,00</option>
+        <option value="4x">4x de R$ 50,00</option>
+      </select>
+      
+      <label for="comments">Comentários</label>
+      <textarea name="comments" id="comments" rows="5"></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>

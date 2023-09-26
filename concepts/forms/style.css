@@ -1,0 +1,68 @@
+body {
+  font-size: 1.2rem;
+}
+
+label {
+  display: block;
+  margin-top: 1.875rem;
+}
+
+input {
+  padding: .625rem 1.25rem;
+  font-size: inherit;
+  border: 2px solid tomato;
+  border-radius: 4px;
+  background-color: beige;
+  color: tomato;
+}
+
+input::placeholder {
+  color: tomato;
+  outline-color: #d43114;
+}
+
+.checkbox,
+.radio {
+  padding-bottom: 1.25rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.625rem;
+  align-items: center;
+}
+
+.checkbox label,
+.radio label {
+  margin: 0;
+}
+
+.checkbox input,
+.radio input {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+select {
+  padding: 0.625rem 1.25rem;
+  font-size: 1.2rem;
+  margin-bottom: 1.25rem;
+}
+
+textarea {
+  padding: 0.625rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+button[type="submit"] {
+  padding: 0.625rem 1.25rem;
+  background-color: tomato;
+  border: 0;
+  font-size: 1.125rem;
+  color: #fff;
+  border-radius: 4px;
+  display: block;
+}
+
+button[type="submit"]:hover {
+  background-color: #d43114;
+  cursor: pointer;
+}
