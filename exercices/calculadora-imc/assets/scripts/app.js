@@ -28,7 +28,7 @@ const obterMensagem = imc => {
     return "Obesidade grau III"
 }
 
-const exibirMensagem = (imc, mensagem) => {
+const exibirResultado = (imc, mensagem) => {
   if (!imc || !mensagem) return;
 
   numeroResultado.textContent = Number(imc).toFixed(2)
@@ -45,7 +45,7 @@ const calcularIMC = event => {
   const imc = obterIMC(peso.value, altura.value)
   const mensagem = obterMensagem(imc)
 
-  exibirMensagem(imc, mensagem)
+  exibirResultado(imc, mensagem)
 }
 
 formulario.addEventListener('submit', calcularIMC)
