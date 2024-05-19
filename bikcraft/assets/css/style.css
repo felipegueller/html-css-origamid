@@ -1,16 +1,23 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 600px;
+}
+
+h1,
+ul,
+p {
+  margin: 0;
 }
 
 ul {
-  margin: 0;
   padding: 0;
   list-style: none;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 img {
@@ -72,6 +79,10 @@ img {
 }
 
 @media screen and (max-width: 800px) {
+  .header-bg {
+    padding: 1.25rem 0;
+  }
+
   .header-menu {
     gap: 1.25rem;
   }
@@ -104,5 +115,112 @@ img {
   .header-menu a {
     padding: 0.5rem 0.75rem;
     font-size: 0.875rem;
+  }
+}
+
+/* Introdução */
+.introducao-bg {
+  background-color: #000;
+  color: #fff;
+  box-shadow: inset 0 -120px #fff;
+}
+
+.introducao-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 2.5rem;
+}
+
+.introducao-conteudo {
+  align-self: end;
+  padding-bottom: 12.5rem;
+}
+
+.introducao-imagem {
+  margin-bottom: -7.5rem;
+}
+
+.introducao-container img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+
+.introducao-conteudo h1 {
+  margin-bottom: 2rem;
+  font-size: 4rem;
+  line-height: 1.125;
+}
+
+.introducao-conteudo h1 span {
+  color: #FFBB00;
+}
+
+.introducao-conteudo p {
+  font-size: 1.125rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #b2b2b2;
+  margin-bottom: 1.25rem;
+}
+
+.introducao-conteudo a {
+  padding: 1rem 2rem;
+  background-image: linear-gradient(#FFBB00, #F2A506);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: #332200;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  line-height: 1.33;
+  font-weight: 600;
+  border-radius: 0.25rem;
+  transition: all 250ms ease;
+}
+
+.introducao-conteudo a:hover {
+  background-image: linear-gradient(#FFB60D, #E59317);
+}
+
+@media screen and (max-width: 1200px) {
+  .introducao-conteudo h1 {
+    font-size: 3rem;
+  }
+
+  .introducao-conteudo p {
+    font-size: 1.125rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .introducao-bg {
+    background-color: #111;
+    padding-top: 2.5rem;
+    box-shadow: inset 0 -3.75rem #fff;
+  }
+
+  .introducao-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .introducao-conteudo {
+    padding-bottom: 0;
+  }
+
+  .introducao-conteudo h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .introducao-container img {
+    height: 300px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .introducao-conteudo a {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
   }
 }
