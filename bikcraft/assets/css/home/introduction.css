@@ -32,16 +32,6 @@
   margin-bottom: 1.25rem;
 }
 
-@media screen and (max-width: 1200px) {
-  .introducao-conteudo h1 {
-    font-size: 3rem;
-  }
-
-  .introducao-conteudo p {
-    font-size: 1.125rem;
-  }
-}
-
 @media screen and (max-width: 800px) {
   .introducao-bg {
     background-color: var(--cor-11);
@@ -59,7 +49,6 @@
   }
 
   .introducao-conteudo h1 {
-    font-size: 2rem;
     margin-bottom: 1rem;
   }
 

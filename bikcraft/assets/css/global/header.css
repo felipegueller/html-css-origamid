@@ -22,12 +22,8 @@
   display: inline-block;
   color: var(--cor-0);
   text-transform: capitalize;
-  font-size: 1.125rem;
-  line-height: 1.5;
   position: relative;
   transition: all 250ms ease;
-  font-family: 'Poppins';
-  font-weight: 400, sans-serif;
 }
 
 .header-menu a::after {
