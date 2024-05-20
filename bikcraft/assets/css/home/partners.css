@@ -40,6 +40,10 @@
         padding-bottom: 3.75rem;
     }
 
+    .partners li {
+        padding: 1.25rem;
+    }
+
     .partners h2 {
         margin-bottom: 1.25rem;
     }
