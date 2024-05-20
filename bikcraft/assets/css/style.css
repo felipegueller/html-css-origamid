@@ -1,8 +1,11 @@
 /* Global */
 @import "./global/global.css";
+@import "./utility/typography.css";
+@import "./utility/colors.css";
+
 @import "./global/header.css";
 
-/* Utility */
+/* Utilitys */
 @import "./utility/components.css";
 
 /* Home */
