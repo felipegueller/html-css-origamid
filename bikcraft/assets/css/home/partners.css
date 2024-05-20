@@ -36,6 +36,14 @@
 }
 
 @media screen and (max-width: 800px) {
+    .partners {
+        padding-bottom: 3.75rem;
+    }
+
+    .partners h2 {
+        margin-bottom: 1.25rem;
+    }
+
     .partners ul {
         grid-template-columns: repeat(2, 1fr);
     }
