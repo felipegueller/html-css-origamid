@@ -21,7 +21,6 @@
 .introducao-container img {
   height: 100%;
   object-fit: cover;
-  border-radius: 0.25rem;
 }
 
 .introducao-conteudo h1 {
@@ -36,7 +35,7 @@
   .introducao-bg {
     background-color: var(--cor-11);
     padding-top: 2.5rem;
-    box-shadow: inset 0 -3.75rem var(--cor-10);
+    box-shadow: inset 0 -3.75rem var(--cor-0);
   }
 
   .introducao-container {
