@@ -13,7 +13,9 @@
 @import "./home/tecnology.css";
 @import "./home/partners.css";
 @import "./home/depositions.css";
-@import "./home/insurance.css";
+
+/* Insurance */
+@import "./insurance/insurance.css";
 
 /* Bicycles */
 @import "./bicycles/bicycles-list.css";
