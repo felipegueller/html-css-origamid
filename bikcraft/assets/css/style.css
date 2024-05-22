@@ -3,10 +3,11 @@
 @import "./utility/typography.css";
 @import "./utility/colors.css";
 
-@import "./global/header.css";
-
 /* Utilitys */
 @import "./utility/components.css";
+
+@import "./global/header.css";
+@import "./global/footer.css";
 
 /* Home */
 @import "./home/introduction.css";
