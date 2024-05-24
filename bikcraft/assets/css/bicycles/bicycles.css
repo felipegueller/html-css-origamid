@@ -1,0 +1,114 @@
+.bicicletas-bg {
+    /* background-color: var(--cor-11); */
+    /* box-shadow: inset 25vw 0 0 var(--cor-0); */
+    background: linear-gradient(90deg, var(--cor-0) 25%, var(--cor-11) 0%);
+
+}
+
+.bicicletas {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    align-content: start;
+}
+
+.bicicletas-imagem {
+    position: relative;
+}
+
+.bicicletas-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+
+.bicicletas-imagem span {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+    background-color: var(--cor-12);
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.bicicletas-conteudo {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.bicicletas-conteudo h2,
+.bicicletas-conteudo p {
+    grid-column: 1/-1;
+}
+
+.bicicletas-conteudo h2{
+    margin-bottom: 1.25rem;
+}
+
+.bicicletas-conteudo h2::before {
+    content: '';
+    display: block;
+    margin-bottom: 0.5rem;
+    width: 0.75rem;
+    height: 0.5rem;
+    background-color: var(--cor-p1);
+}
+
+.bicicletas-conteudo p {
+    margin-bottom: 2rem;
+}
+
+.bicicletas-conteudo ul {
+    display: grid;
+    gap: 16px;
+}
+
+.bicicletas-conteudo li {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.bicicletas-conteudo li img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+.bicicletas-conteudo .botao {
+    place-self: end;
+}
+
+@media screen and (max-width: 800px) {
+    .bicicletas {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .bicicletas-bg {
+        background: var(--cor-11);
+    }
+
+    .bicicletas-conteudo {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .bicicletas-conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .bicicletas-conteudo ul {
+        margin-bottom: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 0.875rem;
+    }
+
+    .bicicletas-conteudo .botao {
+        place-self: start;
+    }
+}
