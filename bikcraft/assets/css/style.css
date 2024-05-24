@@ -6,6 +6,7 @@
 /* Utilitys */
 @import "./utility/components.css";
 
+/* Global components*/
 @import "./global/header.css";
 @import "./global/footer.css";
 
@@ -20,3 +21,6 @@
 
 /* Bicycles */
 @import "./bicycles/bicycles-list.css";
+
+/* Terms */
+@import "./terms/terms.css";

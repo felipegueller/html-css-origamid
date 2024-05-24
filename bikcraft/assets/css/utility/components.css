@@ -59,3 +59,27 @@
   height: 0.25rem;
   background-color: currentColor;
 }
+
+/* Internal pages title */
+.titulo-container {
+  background-color: var(--cor-11);
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+}
+
+.titulo-container p {
+  margin-bottom: 0.25rem;
+}
+
+@media screen and (max-width: 800px) {
+  .titulo-container {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .titulo-container p {
+    font-size: 1rem;
+    text-transform: lowercase;
+    font-weight: 400;
+  }
+}

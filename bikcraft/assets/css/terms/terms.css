@@ -1,0 +1,29 @@
+.termos {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+}
+
+.termos h2 {
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+}
+
+.termos p + h2 {
+    margin-top: 2.5rem;
+}
+
+.termos p {
+    max-width: 80ch;
+}
+
+.termos p + p {
+    margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 800px) {
+    .termos {
+        padding-top: 3.75rem;
+        padding-bottom: 3.75rem;
+    }
+    
+}
