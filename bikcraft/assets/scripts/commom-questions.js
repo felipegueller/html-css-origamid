@@ -1,6 +1,13 @@
 const perguntasContainer = document.querySelector('.perguntas-frequentes dl');
 const perguntas = Array.from(perguntasContainer.children);
 
+const toggleActiveClass = (currentElement, clickedElement) => {
+    if (currentElement === clickedElement)
+        return currentElement.classList.toggle('ativo');
+
+    currentElement.classList.remove('ativo');
+}
+
 const toggleAccordion = event => {
     let clickedElement = event.target;
     const childrenElements = ["DT", "DD"];
@@ -8,13 +15,8 @@ const toggleAccordion = event => {
     if (childrenElements.includes(clickedElement.tagName))
         clickedElement = clickedElement.parentElement;
 
-    perguntas.forEach(perguntaElement => {
-        if (perguntaElement !== clickedElement) {
-            perguntaElement.classList.remove('ativo');
-        } else {
-            perguntaElement.classList.toggle('ativo');
-        }
-    });
+    perguntas.forEach(
+        currentElement => toggleActiveClass(currentElement, clickedElement));
 }
 
 perguntasContainer.addEventListener('click', toggleAccordion)

@@ -54,7 +54,7 @@
   max-width: 80ch;
   max-height: 0;
   overflow-y: hidden;
-  transition: max-height 300ms, padding 500ms;
+  transition: max-height 300ms, padding 300ms ease-in;
 }
 
 .perguntas-frequentes-item.ativo dd {
