@@ -13,7 +13,7 @@
 
 .vantagens-conteudo {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
     gap: 2.5rem 5rem;
 }
 
@@ -33,13 +33,6 @@
     }
 
     .vantagens-conteudo {
-        grid-template-columns: repeat(2, 1fr);
         gap: 2.5rem;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .vantagens-conteudo {
-        grid-template-columns: 1fr;
     }
 }
