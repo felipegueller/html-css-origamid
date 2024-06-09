@@ -17,6 +17,8 @@
 @import "./home/depositions.css";
 
 /* Insurance */
+@import "./insurance/benefits.css";
+@import "./insurance/commom-questions.css";
 @import "./insurance/insurance.css";
 
 /* Bicycles */
