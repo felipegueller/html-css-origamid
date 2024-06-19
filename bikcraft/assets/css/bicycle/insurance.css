@@ -1,0 +1,45 @@
+.seguro-bicicletas-bg {
+  background-color: var(--cor-11);
+  box-shadow: inset 0 7.5rem 0 var(--cor-0), inset 0 -7.5rem 0 var(--cor-12);
+}
+
+.seguro-bicicletas-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.seguro-bicicletas-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.seguro-bicicletas-conteudo {
+  padding-top: 11.25rem;
+  padding-bottom: 11.25rem;
+}
+
+.seguro-bicicletas-conteudo h2 {
+  margin-bottom: 2rem;
+}
+
+.seguro-bicicletas-conteudo p {
+  margin-bottom: 1.25rem;
+}
+
+@media screen and (max-width: 800px) {
+  .seguro-bicicletas-bg {
+    box-shadow: inset 0 -3.75rem 0 var(--cor-12);
+
+  }
+  .seguro-bicicletas-container {
+    grid-template-columns: 1fr;
+  }
+
+  .seguro-bicicletas-conteudo {
+    grid-row: 1;
+    padding-top: 2.5rem;
+    padding-bottom: 0;
+  }
+}

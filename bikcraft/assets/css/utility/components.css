@@ -72,8 +72,11 @@
 }
 
 /* Internal pages title */
-.titulo-container {
+.titulo-bg {
   background-color: var(--cor-11);
+}
+
+.titulo-container {
   padding-top: 3.75rem;
   padding-bottom: 3.75rem;
 }

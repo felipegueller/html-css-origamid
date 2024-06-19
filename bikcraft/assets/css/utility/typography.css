@@ -7,8 +7,12 @@
   font: 600 4rem/1.125 'Poppins', sans-serif;
 }
 
-.font-1-xl {
-  font: 600 2rem/1.25 "Poppins", sans-serif;
+.font-2-xl {
+  font: 600 2rem/1.25 "Roboto", sans-serif;
+}
+
+.font-2-xl {
+  font: 500 2rem/1.25 "Poppins", sans-serif;
 }
 
 .font-1-l {
@@ -52,7 +56,7 @@
 }
 
 .font-1-xs {
-  font: 600 0.875rem/1.5 'Poppins', sans-serif;
+  font: 600 0.75rem/1.5 'Poppins', sans-serif;
 }
 
 @media screen and (max-width: 1200px) {
