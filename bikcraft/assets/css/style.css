@@ -5,6 +5,7 @@
 
 /* Utilitys */
 @import "./utility/components.css";
+@import "./utility/forms.css";
 
 /* Global components*/
 @import "./global/header.css";
@@ -31,3 +32,7 @@
 
 /* Terms */
 @import "./terms/terms.css";
+
+/* Contact */
+@import "./contact/contact.css";
+@import "./contact/stores.css";
