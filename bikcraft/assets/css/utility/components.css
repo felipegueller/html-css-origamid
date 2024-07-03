@@ -16,6 +16,9 @@
   border-radius: 0.25rem;
   transition: all 250ms ease;
   font: 600 1.125rem/1.35 'Poppins', sans-serif;
+  width: max-content;
+  border: none;
+  cursor: pointer;
 }
 
 .botao:hover {
