@@ -7,6 +7,10 @@
   font: 600 4rem/1.125 'Poppins', sans-serif;
 }
 
+.font-1-xl {
+  font: 600 2rem/1.25 "Poppins", sans-serif;
+}
+
 .font-2-xl {
   font: 600 2rem/1.25 "Roboto", sans-serif;
 }
