@@ -12,6 +12,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 2.5rem;
     align-content: start;
+    background: url("../../img/dec/top-right.svg") no-repeat top 3.75rem right 1.25rem;
 }
 
 .bicicletas-imagem {
