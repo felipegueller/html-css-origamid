@@ -1,0 +1,211 @@
+#orcamento {
+    background: linear-gradient(var(--cor-11) 600px, var(--cor-1) 0px);
+}
+
+.orcamento {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    padding-bottom: 7.5rem;
+}
+
+.orcamento h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.18px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.orcamento h2::before {
+    content: "";
+    display: inline-block;
+    width: 0.25rem;
+    height: 0.5rem;
+    background-color: var(--cor-p1);
+    position: absolute;
+    left: -0.75rem;
+}
+
+.orcamento-produto,
+.orcamento-dados {
+    padding: 3.75rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.orcamento-produto {
+    border-radius: 5px 0 0 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: start;
+    gap: 1.25rem;
+    background: var(--cor-12) url("../../img/dec/bottom-left.svg") no-repeat bottom 2.5rem left 1.25rem;
+}
+
+.orcamento-produto > * {
+    grid-column: 1 / -1;
+}
+
+.orcamento-produto > label {
+    grid-column: initial;
+}
+
+.orcamento-produto label {
+    font: 400 1rem/1.5 "Poppins", sans-serif;
+    color: var(--cor-4);
+    background-color: var(--cor-10);
+    display: block;
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    border: 1px solid var(--cor-10);
+}
+
+.orcamento-produto input:checked + label {
+    background-color: var(--cor-0);
+    color: var(--cor-11);
+}
+
+.orcamento-produto label:hover {
+    background-color: var(--cor-9);
+    border-color: var(--cor-9);
+}
+
+.orcamento-produto input:focus + label {
+    box-shadow: 0 0 0 2px var(--cor-p1);
+    border-color: var(--cor-12);
+}
+
+.orcamento-produto label::before {
+    content: "";
+    display: inline-block;
+    width: 0.75rem;
+    height: 0.75rem;
+    border: 1px solid var(--cor-5);
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.orcamento-produto input:checked + label::before {
+    border-color: var(--cor-7);
+    box-shadow: inset 0 0 0 3px var(--cor-0), inset 0 0 0 6px var(--cor-7);
+}
+
+.orcamento-produto input[type="radio"] {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.orcamento-conteudo {
+    display: none;
+}
+
+#bikcraft:checked ~ #orcamento-bikcraft,
+#seguro:checked ~ #orcamento-seguro{
+    display: grid;
+    gap: 1.25rem;
+}
+
+.orcamento-conteudo h2,
+.orcamento-dados h2:nth-child(n + 2) {
+    margin-top: 1.25rem;
+}
+
+.orcamento-conteudo label {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+}
+
+.orcamento-conteudo label span {
+    display: none;
+}
+
+.orcamento-conteudo input:checked + label span {
+    display: block;
+}
+
+.orcamento-detalhes {
+    display: none;
+    padding: 1rem;
+    align-items: center;
+    background-color: var(--cor-0);
+    border-radius: 0.25rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+}
+
+.orcamento-conteudo input:checked + label + .orcamento-detalhes {
+    display: grid;
+}
+
+.orcamento-detalhes li {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.orcamento-detalhes li img {
+    width: 1rem;
+}
+
+.orcamento-dados {
+    background-color: var(--cor-0);
+    border-radius: 0 5px 5px 0;
+    background: var(--cor-0) url("../../img/dec/bottom-right.svg") no-repeat bottom 2.5rem right 1.25rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .orcamento-produto,
+    .orcamento-dados {
+        padding: 2rem;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+    .orcamento {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .orcamento-dados {
+        grid-template-columns: 1fr;
+    }
+
+    /* Importante alterar o valor do grid column pois mesmo com uma coluna o
+        span não deixa o elemento ficar em apenas uma */
+    .orcamento-dados .col-2 {
+        grid-column: 1;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .orcamento {
+        grid-template-columns: 1fr;
+    }
+
+    .orcamento-produto {
+        border-radius: 5px 5px 0 0;
+        background: var(--cor-12);
+    }
+
+    .orcamento-dados {
+        border-radius: 0 0 5px 5px;
+        background: var(--cor-0);
+    }
+
+    .orcamento-detalhes li {
+        font-size: 0.875rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .orcamento-produto label {
+        font-size: 0.875rem;
+    }
+
+    .orcamento-produto,
+    .orcamento-detalhes {
+        grid-template-columns: 1fr;
+    }
+}
