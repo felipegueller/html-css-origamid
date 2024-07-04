@@ -10,6 +10,7 @@
     />
     <title>Bikcraft - Bicicletas Elétricas</title>
 
+    <link rel="preload" href="./assets/css/style.css" as="style" />
     <link rel="stylesheet" href="./assets/css/style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -54,12 +55,18 @@
           <a class="botao" href="./bicicletas">Escolha a sua</a>
         </div>
 
-        <div>
+        <picture>
+          <source
+            media="(max-width: 800px)"
+            srcset="./assets/img/bicicletas/nimbus.jpg"
+          />
           <img
             src="./assets/img/fotos/introducao.jpg"
             alt="Bicicleta elétrica preta"
+            width="1280"
+            height="1600"
           />
-        </div>
+        </picture>
       </div>
     </main>
 
@@ -74,6 +81,8 @@
             <img
               src="./assets/img/bicicletas/magic-home.jpg"
               alt="Bicicleta preta"
+              width="920"
+              height="1040"
             />
             <h3 class="font-1-xl">Magic Might</h3>
             <span class="font-2-m cor-8">R$ 2499</span>
@@ -85,6 +94,8 @@
             <img
               src="./assets/img/bicicletas/nimbus-home.jpg"
               alt="Bicicleta preta"
+              width="920"
+              height="1040"
             />
             <h3 class="font-1-xl">Nimbus Stark</h3>
             <span class="font-2-m cor-8">R$ 4999</span>
@@ -96,6 +107,8 @@
             <img
               src="./assets/img/bicicletas/nebula-home.jpg"
               alt="Bicicleta preta"
+              width="920"
+              height="1040"
             />
             <h3 class="font-1-xl">Nubula Cosmic</h3>
             <span class="font-2-m cor-8">R$ 3999</span>
@@ -153,7 +166,12 @@
         </div>
 
         <div class="tecnologia-imagem">
-          <img src="./assets/img/fotos/tecnologia.jpg" alt="Ferramentas" />
+          <img
+            src="./assets/img/fotos/tecnologia.jpg"
+            alt="Ferramentas"
+            width="1200"
+            height="1920"
+          />
         </div>
       </div>
     </article>
@@ -164,17 +182,69 @@
       </h2>
 
       <ul>
-        <li><img src="./assets/img/parceiros/caravan.svg" alt="caravan" /></li>
-        <li><img src="./assets/img/parceiros/ranek.svg" alt="ranek" /></li>
-        <li><img src="./assets/img/parceiros/handel.svg" alt="handel" /></li>
-        <li><img src="./assets/img/parceiros/dogs.svg" alt="dogs" /></li>
-        <li><img src="./assets/img/parceiros/lescone.svg" alt="lescone" /></li>
         <li>
-          <img src="./assets/img/parceiros/flexblog.svg" alt="flexblog" />
+          <img
+            src="./assets/img/parceiros/caravan.svg"
+            alt="caravan"
+            width="140"
+            height="38"
+          />
         </li>
-        <li><img src="./assets/img/parceiros/surfbot.svg" alt="surfbot" /></li>
         <li>
-          <img src="./assets/img/parceiros/wildbeast.svg" alt="wildbeast" />
+          <img
+            src="./assets/img/parceiros/ranek.svg"
+            alt="ranek"
+            width="149"
+            height="36"
+          />
+        </li>
+        <li>
+          <img
+            src="./assets/img/parceiros/handel.svg"
+            alt="handel"
+            width="139"
+            height="50"
+          />
+        </li>
+        <li>
+          <img
+            src="./assets/img/parceiros/dogs.svg"
+            alt="dogs"
+            width="152"
+            height="39"
+          />
+        </li>
+        <li>
+          <img
+            src="./assets/img/parceiros/lescone.svg"
+            alt="lescone"
+            width="208"
+            height="41"
+          />
+        </li>
+        <li>
+          <img
+            src="./assets/img/parceiros/flexblog.svg"
+            alt="flexblog"
+            width="165"
+            height="38"
+          />
+        </li>
+        <li>
+          <img
+            src="./assets/img/parceiros/surfbot.svg"
+            alt="surfbot"
+            width="200"
+            height="49"
+          />
+        </li>
+        <li>
+          <img
+            src="./assets/img/parceiros/wildbeast.svg"
+            alt="wildbeast"
+            width="196"
+            height="34"
+          />
         </li>
       </ul>
     </section>
@@ -184,6 +254,8 @@
         <img
           src="./assets/img/fotos/depoimento.jpg"
           alt="Pessoa pedalando uma bicicleta bikcraft"
+          width="1560"
+          height="1360"
         />
       </div>
       <div class="depoimento-conteudo">
@@ -204,7 +276,9 @@
 
         <div class="seguros-conteudo">
           <div class="seguros-item">
-            <h3 class="font-1-xl cor-6">Prata <span class="font-1-xl cor-0">R$ 199</span></h3>
+            <h3 class="font-1-xl cor-6">
+              Prata <span class="font-1-xl cor-0">R$ 199</span>
+            </h3>
             <ul class="font-2-m cor-0">
               <li>Duas trocas por ano</li>
               <li>Assistência técnica</li>
@@ -215,7 +289,9 @@
           </div>
 
           <div class="seguros-item">
-            <h3 class="font-1-xl cor-p1">Ouro <span class="font-1-xl cor-0">R$ 299</span></h3>
+            <h3 class="font-1-xl cor-p1">
+              Ouro <span class="font-1-xl cor-0">R$ 299</span>
+            </h3>
             <ul class="font-2-m cor-0">
               <li>Cinco trocas por ano</li>
               <li>Assistência especial</li>
@@ -246,15 +322,38 @@
 
           <ul class="font-2-m cor-5">
             <li><a href="tel:+552199999999">+55 21 9999-9999</a></li>
-            <li><a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a></li>
+            <li>
+              <a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a>
+            </li>
             <li>Rua Ali Perto, 42 - Botafogo</li>
             <li>Rio de Janeiro - RJ</li>
           </ul>
 
           <div class="footer-redes-sociais">
-            <a href="./"><img src="./assets/img/redes/instagram.svg" alt="Instagram Bikcraft"></a>
-            <a href="./"><img src="./assets/img/redes/facebook.svg" alt="Facebook Bikcraft"></a>
-            <a href="./"><img src="./assets/img/redes/youtube.svg" alt="Youtube Bikcraft"></a>
+            <a href="./">
+              <img
+                src="./assets/img/redes/instagram.svg"
+                alt="Instagram Bikcraft"
+                width="32"
+                height="32"
+              />
+            </a>
+            <a href="./">
+              <img
+                src="./assets/img/redes/facebook.svg"
+                alt="Facebook Bikcraft"
+                width="32"
+                height="32"
+              />
+            </a>
+            <a href="./">
+              <img
+                src="./assets/img/redes/youtube.svg"
+                alt="Youtube Bikcraft"
+                width="32"
+                height="32"
+              />
+            </a>
           </div>
         </div>
 
