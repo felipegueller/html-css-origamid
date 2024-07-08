@@ -1,6 +1,7 @@
 import { toggleAccordion } from './internal/commom-questions.js'
 import { activeLink } from './internal/active-link.js'
 import { checkBudgetInput } from './internal/budget.js'
+import { toggleGalleryImage } from './internal/gallery.js'
 import { SimpleAnime } from './plugins/simple-anime.js'
 
 // Alternar as perguntas frequentes
@@ -17,25 +18,9 @@ urlParams.forEach(param => checkBudgetInput(param))
 
 const gallery = document.querySelector(".bicicleta-imagens")
 
-gallery?.addEventListener("click", (event) => {
-    const clickedElement = event.target;
-    const gallery = event.currentTarget;
-    const invalidOperation = clickedElement.tagName !== "IMG" ||
-        gallery.children[0] === clickedElement ||
-        window.matchMedia("(max-width: 1000px)").matches;
+gallery?.addEventListener("click", toggleGalleryImage)
 
-    if (invalidOperation) return;
-
-    const img = document.createElement("img");
-    img.src = clickedElement.src;
-    img.alt = clickedElement.alt;
-    gallery.insertAdjacentElement("afterbegin", img);
-
-    clickedElement.remove();
-})
-
-// Importando o plugin SimpleAnime
+// Importando e incializando o plugin SimpleAnime
 window.SimpleAnime = SimpleAnime;
-const simpleAnime = new SimpleAnime();
-console.log(simpleAnime)
+new SimpleAnime();
 
