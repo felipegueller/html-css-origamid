@@ -53,10 +53,13 @@
 .perguntas-frequentes-item dd {
   padding: 1rem 0 0 1.25rem;
   box-sizing: border-box;
+}
+
+.js .perguntas-frequentes-item dd {
   display: none;
 }
 
-.perguntas-frequentes-item dd.ativo {
+.js .perguntas-frequentes-item dd.ativo {
   display: block;
 }
 

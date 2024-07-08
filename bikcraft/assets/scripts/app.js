@@ -1,6 +1,7 @@
-import { toggleAccordion } from './commom-questions.js'
-import { activeLink } from './active-link.js'
-import { checkBudgetInput } from './budget.js'
+import { toggleAccordion } from './internal/commom-questions.js'
+import { activeLink } from './internal/active-link.js'
+import { checkBudgetInput } from './internal/budget.js'
+import { SimpleAnime } from './plugins/simple-anime.js'
 
 // Alternar as perguntas frequentes
 const perguntas = document.querySelector('.perguntas-frequentes dl')
@@ -32,4 +33,9 @@ gallery?.addEventListener("click", (event) => {
 
     clickedElement.remove();
 })
+
+// Importando o plugin SimpleAnime
+window.SimpleAnime = SimpleAnime;
+const simpleAnime = new SimpleAnime();
+console.log(simpleAnime)
 

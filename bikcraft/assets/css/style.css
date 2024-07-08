@@ -2,6 +2,7 @@
 @import "./global/global.css";
 @import "./utility/typography.css";
 @import "./utility/colors.css";
+@import "./utility/animation.css";
 
 /* Utilitys */
 @import "./utility/components.css";
