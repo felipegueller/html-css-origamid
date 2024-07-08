@@ -4,7 +4,7 @@ const activeLink = links => {
 
     const currentLink = linksArray
         .find(link => link.href.includes(location.href));
-    currentLink.classList.add('ativo');
+    currentLink?.classList.add('ativo');
 }
 
 export { activeLink };
