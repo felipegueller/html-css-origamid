@@ -1,20 +1,12 @@
-const toggleActiveClass = (currentElement, clickedElement) => {
-    if (currentElement === clickedElement)
-        return currentElement.classList.toggle('ativo');
-
-    currentElement.classList.remove('ativo');
-}
-
 const toggleAccordion = event => {
-    let clickedElement = event.target;
-    const childrenElements = ["DT", "DD"];
+    const clickedElement = event.target;
+    if (clickedElement.tagName.toLowerCase() !== "button") return;
 
-    if (childrenElements.includes(clickedElement.tagName))
-        clickedElement = clickedElement.parentElement;
-
-    const perguntas = Array.from(event.currentTarget.children);
-    perguntas.forEach(
-        currentElement => toggleActiveClass(currentElement, clickedElement));
+    const questionID = clickedElement.getAttribute('aria-controls');
+    const question = document.getElementById(questionID);
+    question.classList.toggle('ativo');
+    const isExpanded = question.classList.contains('ativo');
+    clickedElement.setAttribute('aria-expanded', isExpanded);
 }
 
 export { toggleAccordion };
